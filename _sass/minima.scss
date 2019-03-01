@@ -38,6 +38,7 @@ $on-laptop: 800px !default;
 $on-medium: $on-palm !default;
 $on-large: $on-laptop !default;
 
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -56,6 +57,23 @@ $on-large: $on-laptop !default;
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
+
+
+.seguidores {
+
+  img {
+    width: 64px;
+    height: 64px;
+    float: left;
+    margin: 0px 8px;
+  }
+
+  a {
+    height: 64px;
+    line-height: 64px;
+  }
+}
+
 
 // Import partials.
 @import "minima/base",
