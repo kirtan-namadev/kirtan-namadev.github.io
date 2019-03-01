@@ -14,7 +14,7 @@ layout: default
 
   <ul class="post-list">
     {%- for seguidor in site.seguidores -%}
-    <li>
+    <li class="seguidores">
       <h3>
         <img src="{{ seguidor.foto | relative_url }}" alt="">
         <a class="post-link" href="{{ seguidor.url | relative_url }}">
