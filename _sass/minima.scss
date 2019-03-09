@@ -19,9 +19,9 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit: 30px !default;
 
-$text-color: #FFF !default;
-$background-color: #282828 !default;
-$brand-color: #2a7ae2 !default;
+$text-color: #fff !default;
+$background-color: #8f0000 !default;
+$brand-color: #333 !default;
 
 $grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -61,16 +61,24 @@ $on-large: $on-laptop !default;
 
 .seguidores {
 
-  img {
-    width: 64px;
-    height: 64px;
-    float: left;
-    margin: 0px 8px;
+  .uk-card {
+    border-radius: 8px;
+    overflow: hidden;
   }
 
-  a {
-    height: 64px;
-    line-height: 64px;
+  h3 {
+    font-size: 1.3rem;
+    margin: 0px;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: capitalize;
+  }
+
+  .uk-card-body {
+    padding: 16px;
   }
 }
 

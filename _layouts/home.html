@@ -12,18 +12,28 @@ layout: default
   <h3> Seguidores </h3>
 
 
-  <ul class="post-list">
+
+
+
+  <div class="seguidores uk-child-width-1-3" uk-grid>
     {%- for seguidor in site.seguidores -%}
-    <li class="seguidores">
-      <h3>
-        <img src="{{ seguidor.foto | relative_url }}" alt="">
-        <a class="post-link" href="{{ seguidor.url | relative_url }}">
-          {{ seguidor.nome }} AKA ({{ seguidor.alcunha }})
-        </a>
-      </h3>
-    </li>
+    <div>
+      <div class="uk-card uk-card-secondary">
+        <div class="uk-card-media-top">
+          <div class="uk-cover-container uk-height-small">
+            <img src="{{ seguidor.foto | relative_url }}" alt="" uk-cover>
+          </div>
+        </div>
+        <div class="uk-card-body">
+          <h3 class="uk-card-title">
+            <a href="{{ seguidor.url | relative_url }}">{{ seguidor.nome }}</a>
+          </h3>
+          <p>{{ seguidor.alcunha }}</p>
+        </div>
+      </div>
+    </div>
     {%- endfor -%}
-  </ul>
+  </div>
 
 
 </div>
